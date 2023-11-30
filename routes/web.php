@@ -39,4 +39,9 @@ Route::get('/all/category',[CategoryController::class,'index'])->name('AllCat');
 
 
 Route::get('/categories', [CategoryController::class, 'index'])->name('AllCat');
-Route::post('/categories', [CategoryController::class, 'store'])->name('AllCat');
+
+
+Route::post('/categories', [CategoryController::class, 'AddCategory'])->name('AllCat');
+Route::get('/categories/edit/{id}', [CategoryController::class, 'edit'])->name('editCategory');
+Route::put('/categories/update/{id}', [CategoryController::class, 'update'])->name('updateCategory');
+Route::delete('/categories/delete/{id}', [CategoryController::class, 'destroy'])->name('deleteCategory');

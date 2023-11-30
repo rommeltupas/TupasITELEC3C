@@ -16,11 +16,15 @@
 
         <!-- Styles -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="{{ asset('js/app.js') }}" defer></script>
+
 
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
         <x-banner />
+
+
 
         <div class="min-h-screen bg-gray-100">
             @livewire('navigation-menu')
